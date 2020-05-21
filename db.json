@@ -2,7 +2,16 @@
   "users": [
     {
       "name": "Thai",
-      "id": "UBWOIkwAw"
+      "id": "UBWOIkwAw",
+      "email": "thai@example.com",
+      "password": "4297f44b13955235245b2497399d7a93",
+      "isAdmin": true
+    },
+    {
+      "name": "Hien",
+      "id": "UBWOIkwAs",
+      "email": "hien@example.com",
+      "password": "4297f44b13955235245b2497399d7a93"
     }
   ],
   "books": [
@@ -44,6 +53,35 @@
       "userName": "Thai",
       "bookTitle": "How to stop worrying and start living",
       "isComplete": true
+    }
+  ],
+  "wrongLoginCount": [
+    {
+      "hash": "$2b$10$1mICjuMjYYqcijrPco9vVuGosY/7DhV5rZ6wlB2BPfjMJurpsYhsq"
+    },
+    {
+      "hash": "$2b$10$.2EydgOv0i9R6NWAKnhpyOXRjY/iOiM6fkXfNf8pCJCHTjTmWBZqy"
+    },
+    {
+      "hash": "$2b$10$8PpjR0xw.KKNMX1ER2XGRO3Wv9zdqbhHBNRXf7YaJ2neOBmcQglBG"
+    },
+    {
+      "hash": "$2b$10$ZwYnuulnM0WdLteR0qd2g.AFt416hKM1UlWyT/iAdINoPFdVbgaMK"
+    },
+    {
+      "hash": "$2b$10$jX9XEqZMX4bO3Lw6cq2c9OhRUB2eit4/vOGmYvJQ/Tu7J38BxP/ji"
+    },
+    {
+      "hash": "$2b$10$CMpjE/MQbvk8tkpNjdPO9uaqKTn7jGGTsu9dXR5H32Qa6xTkXG8BG"
+    },
+    {
+      "hash": "$2b$10$N2CINk3abu1qVes1Tm3wOe443dm.DdYPrOjpF1HmahPG5oAY0nt46"
+    },
+    {
+      "hash": "$2b$10$qhN22fBsEnHrwcluV8S6L.Tu4NR/UpQEZOpmEkeF/xNrIST.MxVT2"
+    },
+    {
+      "hash": "$2b$10$UtJv4tBQLT9KvHFGHUheRe.uwX2ACWRzHc1z5P8.H.KxkZm6cRaUW"
     }
   ]
 }
