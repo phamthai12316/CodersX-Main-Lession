@@ -10,7 +10,7 @@ var bookRoute = require('./routes/book.route');
 var authRoute = require('./routes/auth.route');
 var transactionRoute = require('./routes/transaction.route');
 
-var authMiddleware = require('./middlewares/auth.middelware');
+var authMiddleware = require('./middlewares/auth.middleware');
 
 // var cookie = require('./middlewares/cookie.middleware');
 
@@ -23,7 +23,7 @@ app.set('views', './views')
 
 app.use(bodyParser.urlencoded({ extended: true })) // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()) // parse application/json
-app.use(cookieParser('asdfghjkl'))
+app.use(cookieParser(process.env.SESSION_SECRET))
 
 app.use(express.static('public')) 
 // app.get('/', function(req, res){

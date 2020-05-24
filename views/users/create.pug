@@ -9,4 +9,8 @@ block content
     .form-group
       label(for="name") Name
       input#name.form-control.mr-sm-2(type="text" name="name", value=values ? values.name : "")
+      label(for="email") Email
+      input#email.form-control.mr-sm-2(type="text" name="email", value=values ? values.email : "")
+      label(for="password") Password
+      input#password.form-control.mr-sm-2(type="text" name="password", value=values ? values.password : "")
       button.btn.btn-primary Create

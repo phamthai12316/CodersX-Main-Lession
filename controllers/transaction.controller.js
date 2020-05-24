@@ -2,7 +2,13 @@ var shortid = require('shortid');
 var db = require('../db');
 
 module.exports.index = (req, res) => {
-  var transaction = db.get('transactions').value();
+  var page = parseInt(req.query.page) || 1;
+  var perPage = 3;
+  
+  var start = (page - 1) * perPage;
+  var end = page * perPage; 
+
+  var transaction = db.get('transactions').value().slice(start, end);
   res.render('transactions/index',{
     transactions : transaction
   });

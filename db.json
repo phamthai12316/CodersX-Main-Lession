@@ -4,14 +4,113 @@
       "name": "Thai",
       "id": "UBWOIkwAw",
       "email": "thai@example.com",
-      "password": "4297f44b13955235245b2497399d7a93",
+      "password": "$2b$10$S2bPJ1ZwORyN68E.xtSUweQoiqH384EW/ObXOgcRmgVn6bmVXjJYC",
+      "wrongLoginCount": 0,
       "isAdmin": true
     },
     {
       "name": "Hien",
       "id": "UBWOIkwAs",
       "email": "hien@example.com",
-      "password": "4297f44b13955235245b2497399d7a93"
+      "password": "$2b$10$S2bPJ1ZwORyN68E.xtSUweQoiqH384EW/ObXOgcRmgVn6bmVXjJYC",
+      "wrongLoginCount": 0
+    },
+    {
+      "name": "Takima",
+      "email": "takima@example.com",
+      "password": "$2b$10$S2bPJ1ZwORyN68E.xtSUweQoiqH384EW/ObXOgcRmgVn6bmVXjJYC",
+      "id": "dhSUvBp4g",
+      "wrongLoginCount": 0
+    },
+    {
+      "id": "d586f72e-292e-4d28-8838-bb5b404fc8ae",
+      "name": "cpurkess0",
+      "email": "nbaton0@cbsnews.com",
+      "password": "lTa92nSXNUw"
+    },
+    {
+      "id": "635b303b-be67-475f-9aa8-7bf224137230",
+      "name": "ctamplin1",
+      "email": "rengley1@ucsd.edu",
+      "password": "t5sO0FfjtBae"
+    },
+    {
+      "id": "89973a56-c003-4e50-b46c-242cacce15e2",
+      "name": "eghiotto2",
+      "email": "bshills2@techcrunch.com",
+      "password": "cCBhemCZ59Ol"
+    },
+    {
+      "id": "4df2efff-e7fb-4167-bff5-f149e56785f8",
+      "name": "jboodell3",
+      "email": "acadden3@aboutads.info",
+      "password": "FtBJ19QNR0"
+    },
+    {
+      "id": "6ddd5e55-df52-469a-97d7-8c4c117974aa",
+      "name": "rlofty4",
+      "email": "wcarwithim4@npr.org",
+      "password": "52N5NRg"
+    },
+    {
+      "id": "dbbc7be9-acf0-4409-b07e-8bd841d81bae",
+      "name": "cjarmyn5",
+      "email": "sappleford5@virginia.edu",
+      "password": "huBhZdbs"
+    },
+    {
+      "id": "96d8f718-67bf-4471-8bbc-620449fb4692",
+      "name": "pnobes6",
+      "email": "ewadforth6@zimbio.com",
+      "password": "HfryOItfCDv3"
+    },
+    {
+      "id": "7a2b9a0a-c3ad-4673-a960-a19d5f08fcc0",
+      "name": "eekkel7",
+      "email": "cilyinski7@google.es",
+      "password": "UjbWTWcd"
+    },
+    {
+      "id": "ce061fb5-d13d-48ee-8b60-26508d7477ab",
+      "name": "rgroomebridge8",
+      "email": "nvodden8@google.pl",
+      "password": "T25M7hZnMcA"
+    },
+    {
+      "id": "50bada95-9272-4356-b004-502cc435cb76",
+      "name": "bdonke9",
+      "email": "mridler9@example.com",
+      "password": "dlP7iSU"
+    },
+    {
+      "id": "c098eed5-3fa0-4927-b44f-db521a6a7adf",
+      "name": "dmcquillana",
+      "email": "crappsa@cornell.edu",
+      "password": "4cmAfVYwn9"
+    },
+    {
+      "id": "4f275bd0-7cb5-4baf-b329-b5ba6ae69bc8",
+      "name": "bminifieb",
+      "email": "bhawkeswoodb@patch.com",
+      "password": "v7x7y8lB"
+    },
+    {
+      "id": "042ac6ee-605d-4346-902f-0f0876f31cb6",
+      "name": "kgirogettic",
+      "email": "emcterlaghc@ameblo.jp",
+      "password": "XcTuiaY"
+    },
+    {
+      "id": "4705d628-fd14-4bd6-b824-4eacc865ed57",
+      "name": "mchengd",
+      "email": "rskellorned@wix.com",
+      "password": "PqO8KuJgKpEV"
+    },
+    {
+      "id": "19af3002-0c70-4d22-b392-93dbefebd70c",
+      "name": "demmote",
+      "email": "crenoufe@bluehost.com",
+      "password": "sGlBT60oU"
     }
   ],
   "books": [
@@ -19,6 +118,91 @@
       "title": "How to stop worrying and start living",
       "description": "Best book ever",
       "id": "PMEh-5AZ_"
+    },
+    {
+      "id": "c6ce0a30-5234-40f8-99ee-bad5efa1ab21",
+      "title": "deploy best-of-breed systems",
+      "description": "Nurse"
+    },
+    {
+      "id": "27a27256-b0d7-4fdc-ab11-388f522965b7",
+      "title": "integrate wireless paradigms",
+      "description": "Software Test Engineer IV"
+    },
+    {
+      "id": "dacb711f-1574-4a2c-84bf-cfd48b181c96",
+      "title": "matrix compelling bandwidth",
+      "description": "Budget/Accounting Analyst I"
+    },
+    {
+      "id": "d6a3a809-9978-4e20-b5ce-a1fbb0ad4d2f",
+      "title": "visualize end-to-end channels",
+      "description": "Legal Assistant"
+    },
+    {
+      "id": "198356ba-9c73-42ca-a84e-6a844c361632",
+      "title": "mesh scalable web services",
+      "description": "Accountant II"
+    },
+    {
+      "id": "acc8b533-a21e-43d8-abd5-48dc5619f603",
+      "title": "engage value-added portals",
+      "description": "Cost Accountant"
+    },
+    {
+      "id": "56a4c7ce-6662-4cef-a731-bc4dc666499c",
+      "title": "engage holistic users",
+      "description": "Civil Engineer"
+    },
+    {
+      "id": "7a6c2463-3b19-45d0-b6e5-6ea885b26a89",
+      "title": "synergize clicks-and-mortar architectures",
+      "description": "Computer Systems Analyst III"
+    },
+    {
+      "id": "2b92c42b-c011-4938-8a3b-7a88e8555b93",
+      "title": "enhance turn-key deliverables",
+      "description": "Accountant IV"
+    },
+    {
+      "id": "58f31fad-1f02-47b4-a739-7bd8806fb7af",
+      "title": "incentivize bleeding-edge architectures",
+      "description": "Community Outreach Specialist"
+    },
+    {
+      "id": "f48b31e6-1237-4212-86ed-0c153f84f553",
+      "title": "engage sexy eyeballs",
+      "description": "Pharmacist"
+    },
+    {
+      "id": "fd397637-fe3b-4c36-8380-b2862cc9e4b5",
+      "title": "whiteboard dot-com relationships",
+      "description": "General Manager"
+    },
+    {
+      "id": "d89a4bda-7bea-4a90-8a77-c3f30bdf8474",
+      "title": "streamline back-end portals",
+      "description": "Actuary"
+    },
+    {
+      "id": "75141a2b-a8f9-4a4b-9d19-227a671d34b0",
+      "title": "deploy intuitive communities",
+      "description": "Librarian"
+    },
+    {
+      "id": "130be082-0aa9-4cb6-be27-baad6cf1a3f1",
+      "title": "aggregate collaborative e-commerce",
+      "description": "Nuclear Power Engineer"
+    },
+    {
+      "id": "e0dbb0e8-bc93-4ea1-9154-8d9d543b1a99",
+      "title": "seize synergistic vortals",
+      "description": "Senior Sales Associate"
+    },
+    {
+      "id": "4c914080-f129-496e-a23b-885a69cf07c8",
+      "title": "synergize synergistic infrastructures",
+      "description": "Accountant III"
     }
   ],
   "transactions": [
@@ -31,57 +215,61 @@
       "isComplete": true
     },
     {
-      "id": "JRMWDxksJ",
-      "userId": "UBWOIkwAw",
-      "bookId": "PMEh-5AZ_",
-      "userName": "Thai",
-      "bookTitle": "How to stop worrying and start living",
-      "isComplete": true
-    },
-    {
-      "id": "ZP0wvrbMX",
-      "userId": "UBWOIkwAw",
-      "bookId": "PMEh-5AZ_",
-      "userName": "Thai",
-      "bookTitle": "How to stop worrying and start living",
+      "id": "jNNZm97Of",
+      "userId": "UBWOIkwAs",
+      "bookId": "c6ce0a30-5234-40f8-99ee-bad5efa1ab21",
+      "userName": "Hien",
+      "bookTitle": "deploy best-of-breed systems",
       "isComplete": false
     },
     {
-      "id": "qIt8j-sw_",
-      "userId": "UBWOIkwAw",
-      "bookId": "PMEh-5AZ_",
-      "userName": "Thai",
-      "bookTitle": "How to stop worrying and start living",
-      "isComplete": true
+      "id": "wVr6zki9a",
+      "userId": "dhSUvBp4g",
+      "bookId": "27a27256-b0d7-4fdc-ab11-388f522965b7",
+      "userName": "Takima",
+      "bookTitle": "integrate wireless paradigms",
+      "isComplete": false
+    },
+    {
+      "id": "G_YYkz6I3",
+      "userId": "d586f72e-292e-4d28-8838-bb5b404fc8ae",
+      "bookId": "dacb711f-1574-4a2c-84bf-cfd48b181c96",
+      "userName": "cpurkess0",
+      "bookTitle": "matrix compelling bandwidth",
+      "isComplete": false
+    },
+    {
+      "id": "q9DOsunDC",
+      "userId": "635b303b-be67-475f-9aa8-7bf224137230",
+      "bookId": "d6a3a809-9978-4e20-b5ce-a1fbb0ad4d2f",
+      "userName": "ctamplin1",
+      "bookTitle": "visualize end-to-end channels",
+      "isComplete": false
+    },
+    {
+      "id": "Jmz2zrXOg",
+      "userId": "89973a56-c003-4e50-b46c-242cacce15e2",
+      "bookId": "d6a3a809-9978-4e20-b5ce-a1fbb0ad4d2f",
+      "userName": "eghiotto2",
+      "bookTitle": "visualize end-to-end channels",
+      "isComplete": false
+    },
+    {
+      "id": "LCdZLpkd_",
+      "userId": "4df2efff-e7fb-4167-bff5-f149e56785f8",
+      "bookId": "198356ba-9c73-42ca-a84e-6a844c361632",
+      "userName": "jboodell3",
+      "bookTitle": "mesh scalable web services",
+      "isComplete": false
+    },
+    {
+      "id": "J2mVqwwu9",
+      "userId": "7a2b9a0a-c3ad-4673-a960-a19d5f08fcc0",
+      "bookId": "58f31fad-1f02-47b4-a739-7bd8806fb7af",
+      "userName": "eekkel7",
+      "bookTitle": "incentivize bleeding-edge architectures",
+      "isComplete": false
     }
   ],
-  "wrongLoginCount": [
-    {
-      "hash": "$2b$10$1mICjuMjYYqcijrPco9vVuGosY/7DhV5rZ6wlB2BPfjMJurpsYhsq"
-    },
-    {
-      "hash": "$2b$10$.2EydgOv0i9R6NWAKnhpyOXRjY/iOiM6fkXfNf8pCJCHTjTmWBZqy"
-    },
-    {
-      "hash": "$2b$10$8PpjR0xw.KKNMX1ER2XGRO3Wv9zdqbhHBNRXf7YaJ2neOBmcQglBG"
-    },
-    {
-      "hash": "$2b$10$ZwYnuulnM0WdLteR0qd2g.AFt416hKM1UlWyT/iAdINoPFdVbgaMK"
-    },
-    {
-      "hash": "$2b$10$jX9XEqZMX4bO3Lw6cq2c9OhRUB2eit4/vOGmYvJQ/Tu7J38BxP/ji"
-    },
-    {
-      "hash": "$2b$10$CMpjE/MQbvk8tkpNjdPO9uaqKTn7jGGTsu9dXR5H32Qa6xTkXG8BG"
-    },
-    {
-      "hash": "$2b$10$N2CINk3abu1qVes1Tm3wOe443dm.DdYPrOjpF1HmahPG5oAY0nt46"
-    },
-    {
-      "hash": "$2b$10$qhN22fBsEnHrwcluV8S6L.Tu4NR/UpQEZOpmEkeF/xNrIST.MxVT2"
-    },
-    {
-      "hash": "$2b$10$UtJv4tBQLT9KvHFGHUheRe.uwX2ACWRzHc1z5P8.H.KxkZm6cRaUW"
-    }
-  ]
+  "wrongLoginCount": []
 }

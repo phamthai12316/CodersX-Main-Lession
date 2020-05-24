@@ -1,18 +1,28 @@
 extends ../layouts/common.pug
 
 block content
+  
   h1 Book list
-    a(href="/books/create") Create new book
-    form(action="/books/search", method="GET")
-      input(type="text" name="q")
-      button Search
-    ul
-      each book in books
-          li
-            span= book.title
-            span &nbsp;
-            a(href="/books/" +  book.id) View
-            span &nbsp;
-            a(href="/books/" +  book.id + "/delete") Delete
-            span &nbsp;
-            a(href="/books/" +  book.id + "/update") Update
+      a(href="/books/create") Create new book 
+      form.form-inline(action="/books/search", method="GET")
+        input.form-control.mr-sm-2(type="text" name="q" placeholder="Enter book name")
+        button.btn.btn-primary Search
+      div.container
+        table.table.table-striped.table-dark
+          thead 
+            tr
+              th(scope='col') Name
+              th(scope='col') Action
+          tbody
+            each book in books
+              tr
+                th(scope='row') 
+                  span= book.title
+                td  
+                  a.btn.btn-primary(href="/books/" +  book.id) View  
+                  span &nbsp;
+                  a.btn.btn-danger(href="/books/" +  book.id + "/update") Update
+                  span &nbsp;
+                  a.btn.btn-warning(href="/books/" +  book.id + "/delete") Delete
+
+          
