@@ -111,6 +111,13 @@
       "name": "demmote",
       "email": "crenoufe@bluehost.com",
       "password": "sGlBT60oU"
+    },
+    {
+      "name": "Me",
+      "email": "me@example.com",
+      "password": "$2b$10$FGAjdJEwLfXyvTsotE0p1OfRR.ScDcMx8WC2T9MY8BP./xiwYMIGm",
+      "id": "W3J0it_k6",
+      "avatar": "uploads/8d6f1b5105f7c055200c4669988720cb"
     }
   ],
   "books": [

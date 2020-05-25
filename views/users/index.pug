@@ -11,11 +11,14 @@ block content
         table.table.table-striped.table-dark
           thead 
             tr
+              th(scope="col") Avatar
               th(scope='col') Name
               th(scope='col') Action
           tbody
             each user in users
               tr
+                td(scope='row') 
+                  img(src= user.avatar, width="32") 
                 th(scope='row') 
                   span= user.name
                 td  
@@ -31,7 +34,7 @@ block content
                 span(aria-hidden='true') &laquo;
                 span.sr-only Previous
             li.page-item
-              a.page-link(href='#') 1
+              a.page-link(href='/users/') 1
             li.page-item
               a.page-link(href='#') 2
             li.page-item

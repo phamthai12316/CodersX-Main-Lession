@@ -3,13 +3,13 @@ var shortid = require('shortid');
 var bcrypt = require('bcrypt');
 
 module.exports.index = (req, res) => {
-  var page = parseInt(req.query.page) || 1;
-  var perPage = 3;
+  // var page = parseInt(req.query.page) || 1;
+  // var perPage = 3;
   
-  var start = (page - 1) * perPage;
-  var end = page * perPage; 
-  var user = db.get('users').value().slice(start, end);
-
+  // var start = (page - 1) * perPage;
+  // var end = page * perPage; 
+  var user = db.get('users').value();
+  
   // var drop = (page - 1) * perPage;
   // var user = db.get('users').drop(drop).take(perPage).value();
 
@@ -31,6 +31,7 @@ module.exports.create = (req,res) => {
 }
 module.exports.postCreate = (req,res) => {
   req.body.id = shortid.generate();
+  req.body.avatar = req.file.path.split('\\').slice(1).join('/');
 
   var myPlaintextPassword = req.body.password;
   var saltRounds = 10;
@@ -41,6 +42,7 @@ module.exports.postCreate = (req,res) => {
   db.get('users').push(req.body).write();
   res.redirect('/users');
 }
+
 module.exports.view = (req,res) => {
   var id = req.params.id;
   var user = db.get('users').find({id : id}).value();
