@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser')
 
 var userRoute = require('./routes/user.route');
 var bookRoute = require('./routes/book.route');
+var productRoute = require('./routes/product.route');
 var authRoute = require('./routes/auth.route');
 var transactionRoute = require('./routes/transaction.route');
 
@@ -39,6 +40,7 @@ app.get('/', (req, res) => {
 // app.use(cookie.cookie);
 app.use('/users',authMiddleware.requireAuth, userRoute);
 app.use('/books',authMiddleware.requireAuth, bookRoute);
+app.use('/products',authMiddleware.requireAuth, productRoute);
 app.use('/transactions',authMiddleware.requireAuth, transactionRoute);
 app.use('/auth', authRoute);
 

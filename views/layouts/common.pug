@@ -1,4 +1,4 @@
-html 
+html
   head
     link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
     link(rel="stylesheet",href="/styles/custom.css")
@@ -15,11 +15,13 @@ html
             a.nav-link(href='/users') User list
           li.nav-item
             a.nav-link(href='/books') Book list
+          li.nav-item
+            a.nav-link(href='/products') Product list
           if user
-            if !user.isAdmin    
+            if !user.isAdmin
               li.nav-item
                a.nav-link(href='/transactions') Transaction list
-            p(style="color: white")= user.name 
+            p(style="color: white")= user.name
 
         form.form-inline.my-2.my-lg-0
           input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
