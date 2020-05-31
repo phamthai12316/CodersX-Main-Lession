@@ -1,0 +1,16 @@
+extends ../layouts/common.pug
+
+block content
+  
+  h1 Transfer List 
+
+    a(href="/transfers/create") Create New Transfer
+    form.form-inline(action="/products/search", method="GET")
+      input.form-control.mr-sm-2(type="text" name="q" placeholder="Enter product")
+      button.btn.btn-primary Search
+
+            
+
+        
+
+          

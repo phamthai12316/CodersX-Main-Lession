@@ -1,19 +1,20 @@
+var Product = require('../models/product.model');
 var db = require('../db');
 var shortid = require('shortid');
 
-module.exports.index = (req, res) => {
-  var page = parseInt(req.query.page) || 1;
-  var perPage = 8;
+module.exports.index = async (req, res) => {
+  // var page = parseInt(req.query.page) || 1;
+  // var perPage = 8;
   
-  var start = (page - 1) * perPage;
-  var end = page * perPage; 
+  // var start = (page - 1) * perPage;
+  // var end = page * perPage; 
 
-  var product = db.get('products').value().slice(start, end);
+  // var product = db.get('products').value().slice(start, end);
  
   // var drop = (page - 1) * perPage;
   // var product = db.get('products').drop(drop).take(perPage).value();
 
-
+  var product = await Product.find();
   res.render('products/index',{
     products: product
   });
@@ -42,9 +43,9 @@ module.exports.postCreate = (req, res) => {
 
 module.exports.view = (req, res) => {
   var id = req.params.id;
-  var product = db.get('products').find({id: id}).value;
-  
-  res.render('/products/view', {
+  var product = db.get('products').find({id : id}).value();
+
+  res.render('products/view',{
     products: product
   })
 }

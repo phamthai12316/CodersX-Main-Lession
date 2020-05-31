@@ -2,7 +2,7 @@ extends ../layouts/common.pug
 
 block content
   
-  h1 User List 
+  h1 Product List 
 
     a(href="/products/create") Create New Product
     form.form-inline(action="/products/search", method="GET")
@@ -17,9 +17,11 @@ block content
             img.card-img-top(src= product.image)
             .card-body
               h5.card-title= product.name
-              p.card-text= product.description
-              a.btn.btn-primary(href='#') Add to cart
-
+              p.card-text(style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis")= product.description
+              a.btn.btn-success.mr-2.mb-2(href='/cart/add/' + product.id) Add to cart
+              a.btn.btn-primary.mb-2(href="/products/" + product.id) View  
+              a.btn.btn-danger.mr-4(href="/products/" + product.id + "/update") Update
+              a.btn.btn-warning(href="/products/" + product.id + "/delete") Delete
 
         
 
