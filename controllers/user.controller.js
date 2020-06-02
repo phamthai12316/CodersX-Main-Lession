@@ -1,17 +1,21 @@
-var db = require('../db');
+// var db = require('../db');
+var User = require('../models/user.model');
+
 var shortid = require('shortid');
 var bcrypt = require('bcrypt');
 
-module.exports.index = (req, res) => {
+module.exports.index = async (req, res) => {
   // var page = parseInt(req.query.page) || 1;
   // var perPage = 3;
   
   // var start = (page - 1) * perPage;
   // var end = page * perPage; 
-  var user = db.get('users').value();
-  
+  // var user = db.get('users').value();
+
   // var drop = (page - 1) * perPage;
   // var user = db.get('users').drop(drop).take(perPage).value();
+
+  var user = await User.find();
 
   res.render('users/index',{
     users : user

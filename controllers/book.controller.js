@@ -1,15 +1,18 @@
+var Book = require('../models/book.model')
 var shortid = require('shortid');
-var db = require('../db');
+// var db = require('../db');
 
-module.exports.index = (req, res) => {
-  var page = parseInt(req.query.page) || 1;
-  var perPage = 3;
+module.exports.index = async (req, res) => {
+  // var page = parseInt(req.query.page) || 1;
+  // var perPage = 3;
   
-  var start = (page - 1) * perPage;
-  var end = page * perPage; 
+  // var start = (page - 1) * perPage;
+  // var end = page * perPage; 
 
-  var book = db.get('books').value().slice(start, end);
+  // var book = db.get('books').value().slice(start, end);
 
+  var book = await Book.find(); 
+  
   res.render('books/index',{
     books: book
   });

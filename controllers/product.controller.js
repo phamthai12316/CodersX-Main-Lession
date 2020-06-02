@@ -20,9 +20,12 @@ module.exports.index = async (req, res) => {
   });
 }
 
-module.exports.search = (req, res) => {
+module.exports.search = async (req, res) => {
   var q = req.query.q;
-  var matchedProduct = db.get('products').value().filter((product) => {
+  // var product = await Product.find();
+
+  // var matchedProduct = db.get('products').value().filter((product) => {
+  var matchedProduct = await Product.filter((product) => {
     return product.name.toLowerCase().indexOf(q.toLowerCase()) !== -1;
   })
   res.render('products/index',{

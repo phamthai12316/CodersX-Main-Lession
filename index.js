@@ -18,15 +18,18 @@ var authRoute = require('./routes/auth.route');
 var transferRoute = require('./routes/transfer.route');
 var transactionRoute = require('./routes/transaction.route');
 
+var apiProductRoute = require('./api/routes/product.route')
 
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware')
 
 // var cookie = require('./middlewares/cookie.middleware');
 
+
 var port = 3000;
 
 var app = express();
+
 
 app.set('view engine', 'pug');
 app.set('views', './views')
@@ -34,6 +37,8 @@ app.set('views', './views')
 app.use(bodyParser.urlencoded({ extended: true })) // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()) // parse application/json
 app.use(cookieParser(process.env.SESSION_SECRET))
+
+app.use('/api/products',apiProductRoute); 
 
 app.use(sessionMiddleware);
 app.use(csurf({cookie: true}));

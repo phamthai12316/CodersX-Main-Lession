@@ -1,14 +1,19 @@
+var Transaction = require('../models/transaction.model')
 var shortid = require('shortid');
-var db = require('../db');
+// var db = require('../db');
 
-module.exports.index = (req, res) => {
-  var page = parseInt(req.query.page) || 1;
-  var perPage = 3;
+
+module.exports.index = async (req, res) => {
+  // var page = parseInt(req.query.page) || 1;
+  // var perPage = 3;
   
-  var start = (page - 1) * perPage;
-  var end = page * perPage; 
+  // var start = (page - 1) * perPage;
+  // var end = page * perPage; 
 
-  var transaction = db.get('transactions').value().slice(start, end);
+  // var transaction = db.get('transactions').value().slice(start, end);
+
+  var transaction = await Transaction.find();
+
   res.render('transactions/index',{
     transactions : transaction
   });
