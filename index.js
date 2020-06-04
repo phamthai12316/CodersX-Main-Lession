@@ -6,7 +6,16 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true});
+mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true}, 
+  (err) => {
+    // kết nối với mongodb
+    if (err) {
+      console.log("err" + err.toString());
+    } else {
+      console.log("success");
+    }
+  }
+);
 
 var csurf = require('csurf',{cookie: true});
 
@@ -26,7 +35,7 @@ var sessionMiddleware = require('./middlewares/session.middleware')
 // var cookie = require('./middlewares/cookie.middleware');
 
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -65,6 +74,6 @@ app.use('/transfers',authMiddleware.requireAuth,transferRoute);
 
 
 
-app.listen(port, function(){
+app.listen(port, () => {
   console.log('Sever listening on port ' + port)
 })
